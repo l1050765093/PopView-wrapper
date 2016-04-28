@@ -45,9 +45,11 @@
 {
     NSLog(@"________________________________________________");
     
-    MyView *myView = [[MyView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+//    MyView *myView = [[MyView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    MyView *myView = [[MyView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 200)];
     myView.delegate = self;
     [myView showIn:self.view];
+    
     
 //    myView.center = self.view.center;
 //    myView.centerX = self.view.centerX;

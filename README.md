@@ -11,10 +11,10 @@ PopView wrapper
 	    if (self) {
 	        
 		// 设置参数 (动画二)
-		self.popType = PopTypeScale;
-		self.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
-		self.animateDuration = 0.5;
-		self.backgroundColor = [UIColor purpleColor];
+		//self.popType = PopTypeScale;
+		//self.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+		//self.animateDuration = 0.5;
+		//self.backgroundColor = [UIColor purpleColor];
 	        
 		// 设置参数 (动画三)
 		// self.popType = PopTypeMove;
@@ -25,6 +25,16 @@ PopView wrapper
 		// self.animateDuration = 0.5;
 		// self.backgroundColor = [UIColor purpleColor];
 	    }
+	    
+	    // 设置参数 (动画三)
+        self.popType = PopTypeMove;
+        self.moveAppearCenterY = SCREEN_HEIGHT - self.height/2;
+        self.moveAppearDirection = MoveAppearDirectionFromBottom;
+        self.moveDisappearDirection = MoveDisappearDirectionToBottom;
+        self.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+        self.animateDuration = 0.5;
+        self.radius = 0;
+        self.backgroundColor = [UIColor purpleColor];
 	    
 	    return self;
 	}
@@ -39,3 +49,5 @@ PopView wrapper
 
 ##动画三:
 ![](http://7sbo4v.com1.z0.glb.clouddn.com/3.gif)
+
+![](http://7sbo4v.com1.z0.glb.clouddn.com/Untitled.gif)

@@ -5,6 +5,8 @@
 //  Created by liman on 11/26/15.
 //  Copyright © 2015 apple. All rights reserved.
 //
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
 
 #import "MyView.h"
 #import "UIViewExt.h"
@@ -31,6 +33,15 @@
 //        self.animateDuration = 0.5;
 //        self.backgroundColor = [UIColor purpleColor];
         
+        // 设置参数 (否则用默认值)
+        self.popType = PopTypeMove;
+        self.moveAppearCenterY = SCREEN_HEIGHT - self.height/2;
+        self.moveAppearDirection = MoveAppearDirectionFromBottom;
+        self.moveDisappearDirection = MoveDisappearDirectionToBottom;
+        self.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+        self.animateDuration = 0.5;
+        self.radius = 0;
+        self.backgroundColor = [UIColor purpleColor];
         
         
         
